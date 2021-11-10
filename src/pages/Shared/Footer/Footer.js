@@ -59,7 +59,7 @@ const Footer = () => {
               <div className='quick-links py-2'>
                 <i className='fas fa-chevron-right text-white-50'></i>
                 <a href='/' className='text-decoration-none text-white-50 ms-1'>
-                 Home
+                  Home
                 </a>
               </div>
             </div>
@@ -80,12 +80,16 @@ const Footer = () => {
                 <span className='text-white-50 ms-3'>+01858585858</span>
               </div>
               <div className='mb-2'>
-                <i a class='fas fa-envelope' style={{ color: '#0791BE' }}></i>
+                <i
+                  a
+                  className='fas fa-envelope'
+                  style={{ color: '#0791BE' }}
+                ></i>
                 <span className='text-white-50 ms-3'>contact@gmail.com</span>
               </div>
               <div className=''>
                 <i
-                  class='fas fa-map-marker-alt'
+                  className='fas fa-map-marker-alt'
                   style={{ color: '#0791BE' }}
                 ></i>
                 <span className='text-white-50 ms-3'>Dhaka, Bangladesh</span>
