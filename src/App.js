@@ -11,9 +11,9 @@ import Login from './pages/Login/Login/Login';
 import Register from './pages/Login/Register/Register';
 import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
 import ManageOrder from './pages/ManageOrder/ManageOrder';
-import Orders from './pages/Orders/Orders';
 import AddService from './pages/AddService/AddService';
 import MyOrder from './pages/MyOrder/MyOrder';
+import Book from './pages/Book/Book';
 
 
 
@@ -33,8 +33,8 @@ function App() {
             <PrivateRoute path='/manageorder'>
               <ManageOrder></ManageOrder>
             </PrivateRoute>
-            <PrivateRoute path='/order'>
-              <Orders></Orders>
+            <PrivateRoute path='/book'>
+           <Book></Book>
             </PrivateRoute>
             <PrivateRoute path='/addservice'>
               <AddService></AddService>
