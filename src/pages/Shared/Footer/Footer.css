@@ -1,0 +1,42 @@
+.footer-navigation{
+    background-color:#030303;
+   
+}
+.quick-links{
+    border-bottom: 1px solid #fffefe21;
+}
+.quick-links a{
+  transition:all .3s ease;
+  size: 20px;
+}
+h5{
+  border-color:#0791BE;
+}
+.quick-links a:hover{
+   color: #0791BE !important;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.quick-links a{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+  transition:all .3s ease;
+
+
+}
+
+.quick-links a:hover{
+    color: #ffffff;
+}
+
+.bg-footer-form{
+  background-color: #030303;
+  outline: none;
+  border:none;
+  border-bottom: 1px solid #b3b3b3;
+}

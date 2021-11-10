@@ -7,6 +7,13 @@ import Header from './pages/Shared/Header/Header';
 import Home from './pages/Home/Home/Home';
 import Footer from './pages/Shared/Footer/Footer';
 import NotFound from './pages/NotFound/NotFound';
+import Login from './pages/Login/Login/Login';
+import Register from './pages/Login/Register/Register';
+import PrivateRoute from './pages/Login/PrivateRoute/PrivateRoute';
+import ManageOrder from './pages/ManageOrder/ManageOrder';
+import Orders from './pages/Orders/Orders';
+import AddService from './pages/AddService/AddService';
+import MyOrder from './pages/MyOrder/MyOrder';
 
 
 
@@ -21,7 +28,25 @@ function App() {
               <Home></Home>
             </Route>
             <Route path='/home'>
-            <Home></Home>
+              <Home></Home>
+            </Route>
+            <PrivateRoute path='/manageorder'>
+              <ManageOrder></ManageOrder>
+            </PrivateRoute>
+            <PrivateRoute path='/order'>
+              <Orders></Orders>
+            </PrivateRoute>
+            <PrivateRoute path='/addservice'>
+              <AddService></AddService>
+            </PrivateRoute>
+            <PrivateRoute path='/myorder'>
+              <MyOrder></MyOrder>
+            </PrivateRoute>
+            <Route path='/login'>
+              <Login></Login>
+            </Route>
+            <Route path='/register'>
+              <Register></Register>
             </Route>
             <Route path='*'>
               <NotFound></NotFound>

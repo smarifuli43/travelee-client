@@ -13,7 +13,7 @@ const PrivateRoute = ({children, ...rest}) => {
        );
     }
   return (
-    <Route>
+    <Route
       {...rest}
       render={({ location }) =>
         user.displayName ? (
@@ -27,6 +27,7 @@ const PrivateRoute = ({children, ...rest}) => {
           ></Redirect>
         )
       }
+    >
     </Route>
   );
 };
