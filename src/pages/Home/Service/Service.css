@@ -1,0 +1,29 @@
+.service img{
+  height: 280px;
+}
+.card{
+  box-shadow: 0px 0px 12px -6px #000000;
+  transition: all .2s ease;
+  position: relative;
+}
+.card:hover{
+  box-shadow: 0px 0px 0px 0px #000000;
+}
+.card-info{
+  background-color:#0791BE ;
+  color:#ffffff;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px 0;
+  margin-top: -34px;
+}
+.price{
+  background-color: #F56960;
+  position: absolute;
+  color:#ffffff;
+  top:30px;
+  right:0;
+  padding: 6px 8px;
+  font-size: 20px;
+}

@@ -33,7 +33,7 @@ function App() {
             <PrivateRoute path='/manageorder'>
               <ManageOrder></ManageOrder>
             </PrivateRoute>
-            <PrivateRoute path='/book'>
+            <PrivateRoute path='/book/:id'>
            <Book></Book>
             </PrivateRoute>
             <PrivateRoute path='/addservice'>

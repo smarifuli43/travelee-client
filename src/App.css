@@ -10,6 +10,25 @@ transition: all .3s ease;
 border-color:#0791BE !important 
 }
 .btn-travelee:hover{
-  background-color: #0791BE;
+  background-color: #068bb8;
   color: #ffffff;
+}
+
+.hl{
+  width: 80px;
+  height: 2px;
+  background-color: #F56960;
+  margin:auto;
+}
+.heading-before{
+color: #F56960;
+text-transform: uppercase;
+font-size: 16px;
+margin-top: 5px;
+}
+.heading-main{
+text-transform: uppercase;
+color:#101F46;
+font-weight: 900;
+font-size: 40px;
 }
