@@ -1,11 +1,11 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
+import { Button, Card} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Service.css'
 
 const Service = (props) => {
   const { name, img, price, description, country, time,people,_id } = props.service;
-  console.log(props.service);
+ 
   return (
     <div>
       <div className='service'>
@@ -27,10 +27,10 @@ const Service = (props) => {
                 <span>{country}</span>
               </div>
             </Card.Text>
-            <Card.Title>{name}</Card.Title>
+            <Card.Title className="mb-3">{name}</Card.Title>
             <Card.Text>{description.slice(0, 90)} ...</Card.Text>
             <Link to={`/book/${_id}`}>
-              <Button className='btn-travelee'>Booking</Button>
+              <Button className='btn-travelee mt-3'>Book Now</Button>
             </Link>
           </Card.Body>
         </Card>

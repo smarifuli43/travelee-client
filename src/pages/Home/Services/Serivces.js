@@ -12,7 +12,7 @@ const Serivces = () => {
   }, []);
   return (
     <div>
-      <div className='container'>
+      <div className='container my-5'>
         <div className='text-center mt-4 '>
           <div
             className='d-flex align-items-center'
