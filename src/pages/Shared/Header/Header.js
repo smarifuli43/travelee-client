@@ -12,10 +12,10 @@ const Header = () => {
       <>
         <Navbar
           collapseOnSelect
-          expand='md'
+          expand='lg'
           bg='dark'
           variant='dark'
-          // fixed='top'
+         
         >
           <Container>
             <Navbar.Brand as={Link} to='/'>
