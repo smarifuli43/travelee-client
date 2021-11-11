@@ -1,0 +1,10 @@
+.blog-banner{
+    background: linear-gradient(135deg, #000000d2, #00000094),
+    url(../../../img/blog\ hero.jpg) no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
