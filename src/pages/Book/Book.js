@@ -82,7 +82,7 @@ const Book = () => {
                 <input
                   placeholder='Your Name'
                   {...register('name', { required: true })}
-                  value={user.displayName}
+                  defaultValue={user.displayName}
                 />
               </div>
               <div className='col-12 col-md-6 col-lg-3'>
@@ -90,7 +90,7 @@ const Book = () => {
                   type='email'
                   placeholder='Your Email'
                   {...register('email', { required: true })}
-                  value={user.email}
+                  defaultValue={user.email}
                 />
               </div>
               <div className='col-12 col-md-6 col-lg-3'>
