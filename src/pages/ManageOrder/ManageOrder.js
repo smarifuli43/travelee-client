@@ -4,7 +4,7 @@ const ManageOrder = () => {
   const [orders, setOrders] = useState([]);
   // const [approve, setApprove] = useState('pending');
   useEffect(() => {
-    fetch('http://localhost:5000/orders')
+    fetch('https://enigmatic-dusk-22710.herokuapp.com/orders')
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);
@@ -12,7 +12,7 @@ const ManageOrder = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm('Are you sure you want to delete?');
     if (proceed === true) {
-      const url = `http://localhost:5000/booking/${id}`;
+      const url = `https://enigmatic-dusk-22710.herokuapp.com/booking/${id}`;
       fetch(url, {
         method: 'DELETE',
       })
@@ -29,7 +29,7 @@ const ManageOrder = () => {
   const handleApproval = (id) => {
     const orderClicked = orders.filter((order) => order._id === id);
     orderClicked[0].status = 'Approved';
-    fetch(`http://localhost:5000/booking/${id}`, {
+    fetch(`https://enigmatic-dusk-22710.herokuapp.com/booking/${id}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json',

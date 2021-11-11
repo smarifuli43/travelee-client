@@ -5,7 +5,9 @@ const MyOrder = () => {
   const [orders, setOrders] = useState([]);
   const { user } = useAuth();
   useEffect(() => {
-    fetch(`http://localhost:5000/myorder?email=${user.email}`)
+    fetch(
+      `https://enigmatic-dusk-22710.herokuapp.com/myorder?email=${user.email}`
+    )
       .then((res) => res.json())
       .then((data) => {
         setOrders(data);
@@ -15,7 +17,7 @@ const MyOrder = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm('Are you sure you want to delete?');
     if (proceed === true) {
-      const url = `http://localhost:5000/booking/${id}`;
+      const url = `https://enigmatic-dusk-22710.herokuapp.com/booking/${id}`;
       fetch(url, {
         method: 'DELETE',
       })

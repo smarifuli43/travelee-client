@@ -11,7 +11,7 @@ const Book = () => {
   const [service, setService] = useState({});
   const { name, img, price, description, country, time, people, _id } = service;
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${id}`)
+    fetch(`https://enigmatic-dusk-22710.herokuapp.com/services/${id}`)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);
@@ -24,7 +24,7 @@ const Book = () => {
     data.people = people;
     data.status = 'pending';
     console.log(data);
-    fetch('http://localhost:5000/booking', {
+    fetch('https://enigmatic-dusk-22710.herokuapp.com/booking', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
@@ -34,9 +34,9 @@ const Book = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.insertedId) {
-          alert('Booking successful')
+          alert('Booking successful');
           reset();
-       }
+        }
       });
   };
 

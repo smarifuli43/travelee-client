@@ -5,7 +5,7 @@ import Blog from '../Blog/Blog';
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/blog')
+    fetch('https://enigmatic-dusk-22710.herokuapp.com/blog')
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
@@ -21,12 +21,9 @@ const Blogs = () => {
       <h2 className='heading-main '>Recent Blog Post</h2>
 
       <Row xs={1} md={2} lg={3} className='g-4 mt-4'>
-        {
-          blogs.map(blog => <Blog
-            key={blog._id}
-            blog={blog}
-          ></Blog>)
-        }
+        {blogs.map((blog) => (
+          <Blog key={blog._id} blog={blog}></Blog>
+        ))}
       </Row>
     </div>
   );

@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import './BlogDetails.css'
+import './BlogDetails.css';
 
 const BlogDetails = () => {
   const { id } = useParams();
   const [blog, setBlog] = useState({});
   const { title, img, description, author, date } = blog;
   useEffect(() => {
-    fetch(`http://localhost:5000/blog/${id}`).then(res=>res.json()).then(data=>setBlog(data));
-  }, [])
-  console.log(blog)
+    fetch(`https://enigmatic-dusk-22710.herokuapp.com/blog/${id}`)
+      .then((res) => res.json())
+      .then((data) => setBlog(data));
+  }, []);
+  console.log(blog);
   return (
     <div>
       <div className='blog-banner'>
@@ -22,7 +24,10 @@ const BlogDetails = () => {
         </div>
       </div>
       <div className='container  text-center'>
-        <div className='shadow  rounded-2 my-5 p-4 mx-auto' style={{ maxWidth: '1000px' }}>
+        <div
+          className='shadow  rounded-2 my-5 p-4 mx-auto'
+          style={{ maxWidth: '1000px' }}
+        >
           <h2 className='heading-main fs-1'>{title}</h2>
           <div
             className='d-flex align-items-center justify-content-between text-secondary mx-auto mt-3'
@@ -37,12 +42,7 @@ const BlogDetails = () => {
               <span>{date}</span>
             </div>
           </div>
-          <img
-            src={img}
-            alt=''
-            className='img-fluid mt-4'
-            
-          />
+          <img src={img} alt='' className='img-fluid mt-4' />
           <p className='text-muted mt-4 px-2 text-start'>{description}</p>
         </div>
       </div>
