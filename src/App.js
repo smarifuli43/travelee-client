@@ -14,6 +14,7 @@ import ManageOrder from './pages/ManageOrder/ManageOrder';
 import AddService from './pages/AddService/AddService';
 import MyOrder from './pages/MyOrder/MyOrder';
 import Book from './pages/Book/Book';
+import BlogDetails from './pages/Home/BlogDetails/BlogDetails';
 
 
 
@@ -42,6 +43,9 @@ function App() {
             <PrivateRoute path='/myorder'>
               <MyOrder></MyOrder>
             </PrivateRoute>
+            <Route path='/blog/:id'>
+              <BlogDetails></BlogDetails>
+            </Route>
             <Route path='/login'>
               <Login></Login>
             </Route>

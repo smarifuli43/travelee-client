@@ -8,6 +8,7 @@ import offRoad from '../../../img/activity/off road.png'
 import camping from '../../../img/activity/camping.png'
 import exploring from '../../../img/activity/exploring.png'
 
+
 const Activity = () => {
   return (
     <div className='activity my-5 '>
